@@ -1,0 +1,45 @@
+{
+    "name": "zf3-book-samples/i18ndemo",
+    "description": "Internationalization & localization demo for the Using Zend Framework 3 book",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf3",
+        "i18n"
+    ],
+    "homepage": "https://github.com/olegkrivtsov/using-zf3-book-samples",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "ext-gd": "*",
+        "ext-mbstring": "*",
+        "ext-intl": "*",
+        "zendframework/zend-component-installer": "^1.1",
+        "zendframework/zend-mvc": "^3.1",
+        "zfcampus/zf-development-mode": "^3.2",
+        "zendframework/zend-mvc-form": "^1.0",
+        "zendframework/zend-mvc-plugins": "^1.0.1",
+        "zendframework/zend-session": "^2.8",
+        "zendframework/zend-captcha": "^2.6",
+        "zendframework/zend-mail": "^2.7",
+        "zendframework/zend-mvc-i18n": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApplicationTest\\": "module/Application/test/"
+        }
+    },
+    "extra": [],
+    "scripts": {
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "serve": "php -S 0.0.0.0:8080 -t public/ public/index.php"
+    }
+}
